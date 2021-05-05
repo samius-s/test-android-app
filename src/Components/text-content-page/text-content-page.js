@@ -1,6 +1,7 @@
 import React from 'react'
 import TextList from '../text-list/text-list'
 import ItemAddForm from '../item-add-form/item-add-form'
+import './text-content-page.css'
 
 const TextContentPage = ({ textData, addItem }) => {
 
@@ -8,7 +9,7 @@ const TextContentPage = ({ textData, addItem }) => {
     //     this.props.history.push('/')
     // }
     return (
-        <div>
+        <div className='text-content-page'>
             <ItemAddForm onItemAdded={addItem} />
             <TextList textData={textData} />
         </div>

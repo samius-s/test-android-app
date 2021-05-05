@@ -1,5 +1,6 @@
 import React from 'react'
 import TextItem from '../text-item/text-item'
+import './text-list.css'
 
 const TextList = ({ textData }) => {
 
@@ -13,7 +14,7 @@ const TextList = ({ textData }) => {
     })
 
     return (
-        <div>
+        <div className='text-list'>
             {elements}
         </div>
     )

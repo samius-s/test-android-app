@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './clock-page.css'
 
 export default class Clock extends Component {
 
@@ -10,7 +11,7 @@ export default class Clock extends Component {
         console.log('new timer')
         this.timerId = setInterval(() => this.setState({
             time: new Date().toLocaleTimeString()
-        }), 1000
+        }), 300
         )
     }
 
@@ -18,14 +19,10 @@ export default class Clock extends Component {
         clearInterval(this.timerId)
     }
 
-    onChangePage = () => {
-        this.props.history.push('/page')
-    }
 
     render() {
-
         return (
-            <div onClick={this.onChangePage}>
+            <div className='clock'>
                 <h2>{this.state.time}</h2>
             </div>
         )

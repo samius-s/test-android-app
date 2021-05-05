@@ -1,0 +1,17 @@
+.item-add-form {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.input {
+    padding: 10px 10px;
+}
+
+.button {
+    background-color: white;
+    color: #282c34;
+    font-weight: bold;
+    margin: 0px 0px 0px 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}

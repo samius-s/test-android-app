@@ -1,0 +1,7 @@
+.clock {
+    background-color: brown;
+    user-select: none;
+    min-height: 100vh;
+    width: 100vh;
+    text-align: center;
+}

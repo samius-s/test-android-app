@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './item-add-form.css'
 
 export default class ItemAddForm extends Component {
 
@@ -22,16 +23,16 @@ export default class ItemAddForm extends Component {
 
     render() {
         return (
-            <form className='item-add-form d-flex'
+            <form className='item-add-form'
                 onSubmit={this.onSubmit}>
                 <input type="text"
-                    className="form-control"
+                    className="input"
                     placeholder="Введите текст"
                     onChange={this.onLabelChange}
                     value={this.state.post}
                 />
                 <button
-                    className="btn btn-outline-secondary"
+                    className="button"
                 >Send</button>
             </form>
         )
