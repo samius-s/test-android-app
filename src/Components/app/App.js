@@ -1,7 +1,6 @@
 import './App.css';
 import Clock from '../clock-page/clock-page'
 import TextContentPage from '../text-content-page/text-content-page'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
 import React, { Component } from 'react';
 
 export default class App extends Component {
@@ -13,10 +12,7 @@ export default class App extends Component {
 
   state = {
     isClock: false,
-    textData: [
-      this.createTextItem('first post'),
-      this.createTextItem('second post'),
-    ]
+    textData: []
   }
 
   createTextItem(post) {
@@ -71,9 +67,6 @@ export default class App extends Component {
           }
         )
       }
-      // } else {
-      //   if (yDiff > 0) console.log('down')
-      //   else console.log('up')
     }
 
     this.x1 = null
